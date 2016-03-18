@@ -1,17 +1,22 @@
-package com.chandlertu.jpa.hibernate;
+package examples.model;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
 public class Employee {
 
 	@Id
-	@GeneratedValue
 	private int id;
 	private String name;
 	private long salary;
+
+	public Employee() {
+	}
+
+	public Employee(int id) {
+		this.id = id;
+	}
 
 	public int getId() {
 		return id;
