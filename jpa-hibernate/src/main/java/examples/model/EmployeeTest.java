@@ -9,7 +9,7 @@ import javax.persistence.Persistence;
 public class EmployeeTest {
 
 	public static void main(String[] args) {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("EmployeeService");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("com.chandlertu.jpa");
 		EntityManager em = emf.createEntityManager();
 		EmployeeService service = new EmployeeService(em);
 
