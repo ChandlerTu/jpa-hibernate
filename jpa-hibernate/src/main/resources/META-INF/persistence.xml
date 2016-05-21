@@ -6,7 +6,6 @@
 
 	<persistence-unit name="com.chandlertu.jpa"
 		transaction-type="RESOURCE_LOCAL">
-		<class>examples.model.Employee</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/chandlertu" />
